@@ -400,7 +400,7 @@
 
 		if(this._elms.input) {
 			this.options.date =
-				parseDate(this._elms.input.value) || this.options.date;
+				parseDate(this._elms.input.value, this.options.dateFormat) || this.options.date;
 		}
 		if(!this._visibleDate) {
 			this._visibleDate = new Date(this.options.date.getTime());
